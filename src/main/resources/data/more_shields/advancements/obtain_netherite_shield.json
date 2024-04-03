@@ -1,0 +1,39 @@
+{
+  "display": {
+    "title": "Become Xaden",
+    "description": "Obtain a Netherite Shield",
+    "icon": {
+      "item": "more_shields:netherite_shield"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "announce_to_chat": true,
+    "hidden": false,
+    "show_toast": true
+  },
+  "parent": "more_shields:root",
+  "criteria": {
+    "obtain_netherite_shield": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items":
+            [
+              "more_shields:netherite_shield"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_netherite_shield"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}
